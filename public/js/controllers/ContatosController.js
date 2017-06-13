@@ -19,4 +19,6 @@ angular.module('contatooh').controller('ContatosController',
 			"email": "cont3@empresa.com.br"
 			}
 		];
+
+		$scope.filtro = '';
 	});
