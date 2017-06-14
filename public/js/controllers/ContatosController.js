@@ -7,6 +7,7 @@ angular.module('contatooh').controller('ContatosController',
 		$scope.filtro = '';
 
 		var Contato = $resource('/contatos/:id');
+
 		function buscaContatos(){
 			Contato.query(function(contatos){
 				$scope.contatos = contatos;
@@ -16,6 +17,7 @@ angular.module('contatooh').controller('ContatosController',
 				console.log(erro);
 			});
 		}
+		
 		buscaContatos();
 
 		$scope.remove = function(contato){
