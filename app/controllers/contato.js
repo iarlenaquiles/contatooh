@@ -1,6 +1,6 @@
 var contatos = [
-{_id:1, nome: 'Iarlen', email: 'iarlem@g.com'},
-{_id:2, nome: 'Jonas', email: 'jonas@g.com'}
+{_id:1, nome: 'Iarlen', email: 'iarlem@gmail.com'},
+{_id:2, nome: 'Jonas', email: 'jonas@gmail.com'}
 ];
 module.exports = function(){
 	var controller = {};
