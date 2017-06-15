@@ -1,7 +1,7 @@
 angular.module('contatooh').controller('ContatoController', 
 	function($scope, $routeParams, $resource){
 		var Contato = $resource('/contatos/:id');
-
+$scope.contato = new Contato();
 		if($routeParams.contatoId){
 			Contato.get({id: $routeParams.contatoId},
 				function(contato){
@@ -15,4 +15,17 @@ angular.module('contatooh').controller('ContatoController',
 		}else{
 			$scope.contato = {};
 		}
+
+		$scope.salva = function(){
+			$scope.contato.$save()
+			.then(function(){
+				$scope.mensagem = {texto: 'Salvo com sucesso'};
+
+				//limpa o form
+				$scope.contato = new Contato();
+			})
+			.catch(function(erro){
+				$scope.mensagem = {texto: 'Não foi possível salvar'};
+			});
+		};
 	});
