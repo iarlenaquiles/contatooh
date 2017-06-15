@@ -6,6 +6,8 @@ angular.module('contatooh').controller('ContatosController',
 
 		$scope.filtro = '';
 
+		$scope.mensagem = {texto: ''};
+
 		var Contato = $resource('/contatos/:id');
 
 		function buscaContatos(){
