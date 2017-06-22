@@ -1,7 +1,7 @@
 var express = require('express');
 var load = require('express-load');
 var bodyParser = require('body-parser');
-module.exports = function() {
+module.exports = function () {
 	var app = express();
 	//configuração de ambiente
 	app.set('port', 3000);

@@ -1,5 +1,5 @@
 angular.module('contatooh').controller('ContatosController', 
-	function($scope, Contato){
+	function($scope, Contato) {
 		$scope.total = 0;
 
 		$scope.contatos = [];
@@ -8,7 +8,7 @@ angular.module('contatooh').controller('ContatosController',
 
 		$scope.mensagem = {texto: ''};
 
-		function buscaContatos(){
+		function buscaContatos() {
 			Contato.query(function(contatos){
 				$scope.contatos = contatos;
 			},
@@ -20,7 +20,7 @@ angular.module('contatooh').controller('ContatosController',
 		
 		buscaContatos();
 
-		$scope.remove = function(contato){
+		$scope.remove = function(contato) {
 			Contato.delete({id: contato._id},
 				buscaContatos,
 				function(erro){

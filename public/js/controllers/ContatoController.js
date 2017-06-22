@@ -1,7 +1,7 @@
 angular.module('contatooh').controller('ContatoController', 
-	function($scope, $routeParams, Contato){
+	function($scope, $routeParams, Contato) {
 
-		if($routeParams.contatoId){
+		if($routeParams.contatoId) {
 			Contato.get({id: $routeParams.contatoId},
 				function(contato){
 					$scope.contato = contato;
@@ -11,7 +11,7 @@ angular.module('contatooh').controller('ContatoController',
 						texto: 'Não foi possível obter o contato.'
 					};
 				});
-		}else{
+		} else {
 			$scope.contato = {};
 		}
 
