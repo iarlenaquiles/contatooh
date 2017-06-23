@@ -8,7 +8,10 @@ module.exports = function() {
 		},
 		email: {
 			type: String,
-			required: true
+			required: true,
+			index: {
+				unique: true
+			}
 		}
 	});
 };
