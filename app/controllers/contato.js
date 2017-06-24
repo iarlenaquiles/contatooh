@@ -5,14 +5,7 @@ module.exports = function () {
 
 	controller.obtemContato = function (req, res) {};
 
-	controller.removeContato = function (req, res) {
-		var idContato = req.params.id;
-		contatos = contatos.filter(function (contato) {
-			return contato._id != idContato;
-		});
-
-		res.status(204).end();
-	};
+	controller.removeContato = function (req, res) {};
 
 	controller.salvaContato = function (req, res) {
 		var contato = req.body;
