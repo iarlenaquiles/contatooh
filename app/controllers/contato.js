@@ -1,5 +1,3 @@
-var contatos = [];
-
 module.exports = function () {
 	var controller = {};
 	var id_contato_inc = 0;
