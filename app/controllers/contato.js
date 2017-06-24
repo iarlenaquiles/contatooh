@@ -1,6 +1,6 @@
 module.exports = function () {
 	var controller = {};
-	var id_contato_inc = 0;
+	
 	controller.listaContatos = function (req, res) {
 		res.json(contatos);
 	};
