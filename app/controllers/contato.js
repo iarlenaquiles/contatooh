@@ -7,11 +7,7 @@ module.exports = function () {
 
 	controller.removeContato = function (req, res) {};
 
-	controller.salvaContato = function (req, res) {
-		var contato = req.body;
-		contato = contato._id ? atualiza(contato) : adiciona(contato);
-		res.json(contato);
-	};
+	controller.salvaContato = function (req, res) {};
 
 	function adiciona(contatoNovo) {
 		contatoNovo._id = ++id_contato_inc;
