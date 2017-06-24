@@ -3,7 +3,9 @@ module.exports = function (app) {
 
 	var Contato = app.models.contato;
 	
-	controller.listaContatos = function (req, res) {};
+	controller.listaContatos = function (req, res) {
+		var promise = Contato.find().exec();
+	};
 
 	controller.obtemContato = function (req, res) {};
 
