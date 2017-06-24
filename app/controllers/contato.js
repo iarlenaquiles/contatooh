@@ -9,11 +9,7 @@ module.exports = function () {
 
 	controller.salvaContato = function (req, res) {};
 
-	function adiciona(contatoNovo) {
-		contatoNovo._id = ++id_contato_inc;
-		contatos.push(contatoNovo);
-		return contatoNovo;
-	};
+	function adiciona(contatoNovo) {};
 
 	function atualiza(contatoAlterar) {
 		contatos = contatos.map(function (contato) {
