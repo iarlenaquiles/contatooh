@@ -56,7 +56,16 @@ module.exports = function (app) {
 				}
 				);
 		}else{
-			
+			Contato.create(req.body)
+			.then(
+				function(contato){
+					res.status(201).json(contato);
+				},
+				function(erro){
+					console.log(erro);
+					res.status(500).json(erro);
+				}
+				);
 		}
 	};
 
