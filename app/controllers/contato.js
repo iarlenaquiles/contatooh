@@ -1,9 +1,7 @@
 module.exports = function () {
 	var controller = {};
 	
-	controller.listaContatos = function (req, res) {
-		res.json(contatos);
-	};
+	controller.listaContatos = function (req, res) {};
 
 	controller.obtemContato = function (req, res) {};
 
