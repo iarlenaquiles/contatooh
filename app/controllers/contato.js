@@ -1,5 +1,7 @@
-module.exports = function () {
+module.exports = function (app) {
 	var controller = {};
+
+	var Contato = app.models.contato;
 	
 	controller.listaContatos = function (req, res) {};
 
