@@ -11,16 +11,7 @@ module.exports = function () {
 
 	function adiciona(contatoNovo) {};
 
-	function atualiza(contatoAlterar) {
-		contatos = contatos.map(function (contato) {
-			if(contato._id == contatoAlterar._id){
-				contato = contatoAlterar;
-			}
-			return contato;
-		});
-
-		return contatoAlterar;
-	}
+	function atualiza(contatoAlterar) {};
 
 	return controller;
 };
